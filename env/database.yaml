@@ -4,7 +4,7 @@ DB:
     Driver: "mysql"
     Host: "192.168.8.99"
     Port: "3306"
-    Database: "tianli_lida_children"
+    Database: ""
     Username: "root"
     Password: ""
     Charset: "utf8mb4"
