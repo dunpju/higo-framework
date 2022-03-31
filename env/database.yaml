@@ -2,13 +2,11 @@
 DB:
   Default:
     Driver: "mysql"
-    #Host: "47.115.33.187"
     Host: "192.168.8.99"
     Port: "3306"
-    #Database: "higo-children"
     Database: "tianli_lida_children"
     Username: "root"
-    Password: "1qaz2wsx"
+    Password: ""
     Charset: "utf8mb4"
     Collation: "utf8mb4_unicode_ci"
     Prefix: "tl_"
@@ -20,7 +18,7 @@ DB:
 Redis:
   Default:
     Host: "192.168.8.99"
-    Auth: "1qaz2wsx"
+    Auth: ""
     Port: 6379
     Db: 0
     Pool:
