@@ -2,3 +2,6 @@
 /env/database.yaml
 /env/serve.yaml
 /env/app.yaml
+/go.sum
+/runtime
+/ssl
