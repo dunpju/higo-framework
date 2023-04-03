@@ -2,22 +2,22 @@
 DB:
   Default:
     Driver: "mysql"
-    Host: "192.168.8.99"
+    Host: "rm-2vcyj9a51j8525bsi6o.mysql.cn-chengdu.rds.aliyuncs.com"
     Port: "3306"
-    Database: ""
-    Username: "root"
-    Password: ""
+    Database: "db_tianli_admin"
+    Username: "tl_root"
+    Password: "^R#7w$$aW!CiZDBWp1zJaBHVzhd2m&BE"
     Charset: "utf8mb4"
     Collation: "utf8mb4_unicode_ci"
     Prefix: "tl_"
     LogMode: true
-    MaxIdle: 20
+    MaxIdle: 200
     MaxOpen: 1
     MaxLifetime: 10
 
 Redis:
   Default:
-    Host: "192.168.8.99"
+    Host: ""
     Auth: ""
     Port: 6379
     Db: 0

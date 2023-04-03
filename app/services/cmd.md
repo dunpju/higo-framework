@@ -1,0 +1,1 @@
+go run bin\main.go -gen=service -out=app\service -name=TestService

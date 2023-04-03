@@ -1,0 +1,1 @@
+go run bin\main.go -gen=param -out=app\params -name=DemoList

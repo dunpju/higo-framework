@@ -4,8 +4,8 @@ import (
 	"github.com/dengpju/higo-gin/higo"
 )
 
-type MyBean struct{ higo.Bean }
+type Bean struct{ higo.Bean }
 
-func NewMyBean() *MyBean {
-	return &MyBean{}
+func NewBean() *Bean {
+	return &Bean{}
 }

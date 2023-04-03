@@ -1,10 +1,8 @@
 package router
 
 import (
-	"fmt"
 	"github.com/dengpju/higo-gin/higo"
-	"github.com/dengpju/higo-utils/utils"
-	"higo-framework/app/const/StaticConst"
+	"github.com/gin-gonic/gin"
 )
 
 // https api 接口
@@ -18,12 +16,12 @@ func NewHttps() *Https {
 
 // 路由装载器
 func (this *Https) Loader(hg *higo.Higo) {
-	// 静态文件
-	hg.Static(StaticConst.IndexRelativePath, fmt.Sprintf("%sdist", hg.GetRoot().Join(utils.PathSeparator())))
 	this.Api(hg)
 }
 
 // api 路由
 func (this *Https) Api(hg *higo.Higo) {
-	//router.AddGroup()
+	hg.GET("/", func(context *gin.Context) {
+		_, _ = context.Writer.Write([]byte("Hello higo"))
+	})
 }

@@ -1,0 +1,33 @@
+# 数据库
+DB:
+  Default:
+    Driver: "mysql"
+    Host: "rm-2vcyj9a51j8525bsi6o.mysql.cn-chengdu.rds.aliyuncs.com"
+    Port: "3306"
+    Database: "db_tianli_admin"
+    Username: "tl_root"
+    Password: "^R#7w$$aW!CiZDBWp1zJaBHVzhd2m&BE"
+    Charset: "utf8mb4"
+    Collation: "utf8mb4_unicode_ci"
+    Prefix: "tl_"
+    LogMode: true
+    MaxIdle: 200
+    MaxOpen: 1
+    MaxLifetime: 10
+
+Redis:
+  Default:
+    Host: ""
+    Auth: ""
+    Port: 6379
+    Db: 0
+    Pool:
+      Min_Connections: 1
+      Max_Connections: 10
+      Connect_Timeout: 10.0
+      Wait_Timeout: 3.0
+      Heartbeat: -1
+      Max_Idle: 3
+      Max_Idle_Time: 60
+      Max_Conn_Lifetime: 10
+      Wait: true

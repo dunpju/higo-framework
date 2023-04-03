@@ -6,6 +6,6 @@ import (
 	"higo-framework/app/errcode"
 )
 
-func Throw(err errcode.CodeErrorCode) {
+func Throw(err errcode.ErrorCode) {
 	higo.Throw(exception.Code(int(err)), exception.Message(err.Message()), exception.Data(""))
 }

@@ -1,0 +1,1 @@
+go run bin\main.go -gen=code -name=ErrorCode -out=app\errcode -path=bin\yaml -auto=yes -force=yes

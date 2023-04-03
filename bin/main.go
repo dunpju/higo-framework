@@ -11,33 +11,27 @@ import (
 	"strings"
 )
 
-//定义命令行参数
+// 定义命令行参数
 var Root string
-var AlhttpsLogPath string
 
-func main()  {
-	flag.StringVar(&Root, "root", "."+utils.PathSeparator(), "主目录")
-	flag.StringVar(&AlhttpsLogPath, "log", "."+utils.PathSeparator()+"log", "alhttps日志路径")
+func main() {
+	flag.StringVar(&Root, "root", "."+utils.Dir.Separator(), "主目录")
 
 	//解析命令行参数
 	//flag.Parse()
 
 	logger.Logrus.IsInit(false).Init()
 	logger.Logrus.Info("root:", Root)
-	logger.Logrus.Info("alhttps log:", AlhttpsLogPath)
 
-	beanConfig := beans.NewMyBean()
-	higo.Init(utils.NewSliceString(strings.Split(Root, utils.PathSeparator())...)).
-		AuthHandlerFunc(middlewares.NewAuth()).
+	higo.RecoverHandle = middlewares.RecoverHandle
+	higo.Init(utils.Slice.New(strings.Split(Root, utils.Dir.Separator())...)).
+		CorsHandlerFunc(middlewares.NewCors()).
 		Middleware(middlewares.NewRunLog()).
-		AddServe(router.NewHttps(), beanConfig).
+		AddServe(router.NewHttps()).
+		Beans(beans.NewBean()).
 		IsAutoTLS(true).
 		IsRedisPool().
 		InitGroupIsAuth(true).
-		Cron("* * * * * ?", func() {
-			utils.SecretExpiredClear()
-			logger.Logrus.Infoln("执行密钥清除,还有", utils.SecretContainer.Len(), "个秘钥")
-		}).
 		SetBits(1024).
 		Boot()
 }

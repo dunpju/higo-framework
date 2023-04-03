@@ -1,0 +1,1 @@
+go run bin\main.go -gen=controller -out=app\controllers -name="控制器名称"

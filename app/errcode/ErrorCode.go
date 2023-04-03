@@ -4,14 +4,14 @@ import (
 	"gitee.com/dengpju/higo-code/code"
 )
 
-//错误码
-type CodeErrorCode int64
+// 错误码
+type ErrorCode int64
 
-func (this CodeErrorCode) Message() string {
-	return code.Get(this)
+func (this ErrorCode) Message(variables ...interface{}) string {
+	return code.Get(this, variables...)
 }
 
-func (this CodeErrorCode) Register() code.Message {
+func (this ErrorCode) Register() code.Message {
 	autoload()
 	return code.Container()
 }
