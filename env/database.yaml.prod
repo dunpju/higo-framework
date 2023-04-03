@@ -2,14 +2,14 @@
 DB:
   Default:
     Driver: "mysql"
-    Host: "rm-2vcyj9a51j8525bsi6o.mysql.cn-chengdu.rds.aliyuncs.com"
+    Host: ""
     Port: "3306"
-    Database: "db_tianli_admin"
-    Username: "tl_root"
-    Password: "^R#7w$$aW!CiZDBWp1zJaBHVzhd2m&BE"
+    Database: ""
+    Username: ""
+    Password: ""
     Charset: "utf8mb4"
     Collation: "utf8mb4_unicode_ci"
-    Prefix: "tl_"
+    Prefix: ""
     LogMode: true
     MaxIdle: 200
     MaxOpen: 1
