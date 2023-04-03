@@ -29,9 +29,5 @@ func main() {
 		Middleware(middlewares.NewRunLog()).
 		AddServe(router.NewHttps()).
 		Beans(beans.NewBean()).
-		IsAutoTLS(true).
-		IsRedisPool().
-		InitGroupIsAuth(true).
-		SetBits(1024).
 		Boot()
 }
