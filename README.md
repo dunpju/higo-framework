@@ -1,2 +1,2 @@
 # higo-framework
-https://github.com/dengpju/higo-gin
+@see https://github.com/dengpju/higo-gin
