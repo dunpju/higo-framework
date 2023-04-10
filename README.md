@@ -2,6 +2,11 @@
 @see https://github.com/dengpju/higo-gin
 
 # 使用
+### 下载框架源码
+```
+点击右侧 Releases -> 点击 Source code
+```
+
 ### 修改go.mod模块
 ```
 module [模块名称]
