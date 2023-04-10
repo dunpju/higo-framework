@@ -2,8 +2,8 @@ package ErrorException
 
 import (
 	"github.com/dengpju/higo-gin/higo"
+	"github.com/dengpju/higo-gin/higo/errcode"
 	"github.com/dengpju/higo-throw/exception"
-	"higo-framework/app/errcode"
 )
 
 func Throw(err errcode.ErrorCode) {
