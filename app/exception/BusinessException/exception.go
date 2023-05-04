@@ -1,8 +1,8 @@
 package BusinessException
 
 import (
-	"github.com/dengpju/higo-gin/higo"
-	"github.com/dengpju/higo-throw/exception"
+	"github.com/dunpju/higo-gin/higo"
+	"github.com/dunpju/higo-throw/exception"
 )
 
 func Throw(message string, code int) {

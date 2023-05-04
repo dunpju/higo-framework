@@ -2,9 +2,9 @@ package main
 
 import (
 	"flag"
-	"github.com/dengpju/higo-gin/higo"
-	"github.com/dengpju/higo-logger/logger"
-	"github.com/dengpju/higo-utils/utils"
+	"github.com/dunpju/higo-gin/higo"
+	"github.com/dunpju/higo-logger/logger"
+	"github.com/dunpju/higo-utils/utils"
 	"higo-framework/app/beans"
 	"higo-framework/app/middlewares"
 	"higo-framework/router"

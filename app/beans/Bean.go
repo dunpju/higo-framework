@@ -1,7 +1,7 @@
 package beans
 
 import (
-	"github.com/dengpju/higo-gin/higo"
+	"github.com/dunpju/higo-gin/higo"
 )
 
 type Bean struct{ higo.Bean }

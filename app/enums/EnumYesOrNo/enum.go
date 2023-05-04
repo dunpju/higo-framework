@@ -1,6 +1,6 @@
 package EnumYesOrNo
 
-import "github.com/dengpju/higo-enum/enum"
+import "github.com/dunpju/higo-enum/enum"
 
 var e YesOrNo
 

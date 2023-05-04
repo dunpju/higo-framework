@@ -1,5 +1,5 @@
 # higo-framework
-@see https://github.com/dengpju/higo-gin
+@see https://github.com/dunpju/higo-gin
 
 # 使用
 ### 下载框架源码
